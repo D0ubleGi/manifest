@@ -15,7 +15,7 @@ constructor(@Inject(PLATFORM_ID) private platformId: Object) {
   const savedPassword = this.isBrowser ? localStorage.getItem('password') : '';
 
 this.socket = io('https://list-backend-jzt8.onrender.com', {
-  transports: ['polling'], 
+    transports: ['websocket', 'polling'],
   withCredentials: false,
   reconnectionAttempts: Infinity,
   reconnectionDelay: 1000,
