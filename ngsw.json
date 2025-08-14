@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1755171049183,
+  "timestamp": 1755171293562,
   "index": "https://D0ubleGi.github.io/manifest/index.html",
   "assetGroups": [
     {
@@ -72,7 +72,7 @@
     "https://D0ubleGi.github.io/manifest/icons/to-do-list_3_6_optimized.png": "cef64a2a8985c630fd9b8176dbca775c303e74c9",
     "https://D0ubleGi.github.io/manifest/icons/to-do-list_3_7_optimized.png": "151eadcc20cc86d5e46d376609a7b94e8ed46c8d",
     "https://D0ubleGi.github.io/manifest/icons/to-do-list_3_optimized.png": "39e8aaa8ce641ec48ee1b26d5b716ea231e148ed",
-    "https://D0ubleGi.github.io/manifest/index.html": "463d2f4bc51056c4fd709630b21bacc42a9c12ba",
+    "https://D0ubleGi.github.io/manifest/index.html": "51aba2ea1c9359eafc65cb7d252958923279360e",
     "https://D0ubleGi.github.io/manifest/main-HHB7HUZ5.js": "8fec09e6c0173ac156d79d3b8206288c00eb7fbb",
     "https://D0ubleGi.github.io/manifest/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
     "https://D0ubleGi.github.io/manifest/styles-5INURTSO.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
