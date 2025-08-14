@@ -123,7 +123,7 @@ currid='';
 @ViewChild('button5') button5!: ElementRef<HTMLButtonElement>
 @ViewChild('usuree') usuree!: ElementRef<HTMLParagraphElement>
 @ViewChild('button10') button10!: ElementRef<HTMLButtonElement>
-
+@ViewChild('install') install!: ElementRef<HTMLDivElement>
 ngOnInit() { 
   this.socket.onerror((err)=>{
     if(err==='utaken'){
@@ -175,7 +175,7 @@ ngOnInit() {
       setTimeout(() => {
         this.login.nativeElement.style.display='none';
   this.Todolists.nativeElement.style.display='flex';
-
+  this.install.nativeElement.style.display='none';
       }, 500);  
       this.socket.load(usero);
     }
