@@ -410,8 +410,14 @@ userebi.forEach((element:{user:any}) => {
   });
 
   this.socket.oncompleted((del)=>{
+    if(del==='ara'){
+      this.validation17.nativeElement.textContent=`Behave urself woman!!!`;
+      this.validation17.nativeElement.style.color='red';
+    }
+    else{
     this.validation17.nativeElement.textContent=`✅Task ${JSON.stringify(del)} completed successfully!`;
     this.validation17.nativeElement.style.color='green';
+    }
     setTimeout(() => {
       this.validation17.nativeElement.textContent='';
       this.validation17.nativeElement.style.color='none';
