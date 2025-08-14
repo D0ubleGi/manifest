@@ -290,7 +290,7 @@ this.button17.nativeElement.addEventListener('click', handler);
     const haia=document.getElementsByClassName('lists');
 for (let i = 0; i < haia.length; i++) {
   const el = haia[i] as HTMLElement;
-  el.style.cursor= 'url(/assets/images/icons8-x-18.png) 0 0, auto';
+  el.style.cursor= 'url("assets/images/icons8-x-18.png") 0 0, auto';
   }
 }
 }  this.srch.nativeElement.textContent="Search lists";
@@ -800,11 +800,11 @@ removee(){
     this.renderer.addClass(this.remove.nativeElement,'hov2');
     this.remove.nativeElement.style.border='1px solid green';
     this.act=true;
-this.Todolists.nativeElement.style.cursor = 'url(/assets/images/icons8-x-18.png) 0 0, auto';
+this.Todolists.nativeElement.style.cursor = 'url("assets/images/icons8-x-18.png") 0 0, auto';console.log(this.Todolists.nativeElement.style.cursor);
 const haia=document.getElementsByClassName('lists');
 for (let i = 0; i < haia.length; i++) {
   const el = haia[i] as HTMLElement;
-  el.style.cursor= 'url(/assets/images/icons8-x-18.png) 0 0, auto';
+  el.style.cursor = 'url("assets/images/icons8-x-18.png") 0 0, auto';
   }
 }
   else{
