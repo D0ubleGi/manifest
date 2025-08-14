@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1755169515220,
+  "timestamp": 1755169640293,
   "index": "https://D0ubleGi.github.io/manifest/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://D0ubleGi.github.io/manifest/favicon.ico",
         "https://D0ubleGi.github.io/manifest/index.html",
-        "https://D0ubleGi.github.io/manifest/main-2UOYLJAH.js",
+        "https://D0ubleGi.github.io/manifest/main-FYSWTZBE.js",
         "https://D0ubleGi.github.io/manifest/polyfills-B6TNHZQ6.js",
         "https://D0ubleGi.github.io/manifest/styles-5INURTSO.css"
       ],
@@ -72,8 +72,8 @@
     "https://D0ubleGi.github.io/manifest/icons/to-do-list_3_6_optimized.png": "cef64a2a8985c630fd9b8176dbca775c303e74c9",
     "https://D0ubleGi.github.io/manifest/icons/to-do-list_3_7_optimized.png": "151eadcc20cc86d5e46d376609a7b94e8ed46c8d",
     "https://D0ubleGi.github.io/manifest/icons/to-do-list_3_optimized.png": "39e8aaa8ce641ec48ee1b26d5b716ea231e148ed",
-    "https://D0ubleGi.github.io/manifest/index.html": "1ed16bd8b76d0c35339d87757b7b192e7230b45c",
-    "https://D0ubleGi.github.io/manifest/main-2UOYLJAH.js": "9bfbf95999078487fceedd5926d37aa2d16eb951",
+    "https://D0ubleGi.github.io/manifest/index.html": "8f5e6cbe22326a5ac88adee0955710f0bdbb28a0",
+    "https://D0ubleGi.github.io/manifest/main-FYSWTZBE.js": "c811ddd1aa81d2c96da908a7afe8daf3904c7434",
     "https://D0ubleGi.github.io/manifest/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
     "https://D0ubleGi.github.io/manifest/styles-5INURTSO.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "https://D0ubleGi.github.io/manifest/web-app-manifest-192x192.png": "b4f601a664ac166b5d3ee377192d2ab7ad3aeeb0",
