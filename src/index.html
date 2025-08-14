@@ -1,13 +1,109 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' https://bludiana.wuaze.com/;">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
   <title>Todolist</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="/icons/to-do-list_3_5_optimized.png" sizes="192x192" />
+  <link rel="shortcut icon" href="/icons/to-do-list_3_5_optimized.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/to-do-list_3_4_optimized.png" />
+  <meta name="apple-mobile-web-app-title" content="Todolist" />
+  <meta name="theme-color" content="#ffffff">
 </head>
+
+<style>
+  html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+  body{
+    background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        
+  }
+  @media (max-width: 600px) {
+    body {
+        background-color: black;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+        overflow-y: auto; 
+        padding: 10px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+  .lists{
+    width: 330px;
+    height: 35px;
+    border: 1px solid orange;
+    border-radius: 15px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lists:hover{
+    box-shadow: 0 0 10px 0px orange;
+    cursor: pointer;
+    transform: translate(0.5px,0.5px);
+  
+}
+.listo{
+  width: 330px;
+    height: 35px;
+    border: 1px solid orange;
+    border-radius: 15px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url('/assets/images/icons8-x-18.png') 0 0, auto;
+}
+.listo:hover{
+    box-shadow: 0 0 10px 0px orange;
+    cursor: pointer;
+    transform: translate(0.5px,0.5px);
+    
+}
+.hov1{
+  border: 1px solid red;
+}
+.hov1:hover{
+    box-shadow: 0 0 50px 3px red;
+}
+.hov2{
+  border: 1px solid green;
+}
+.hov2:hover{
+    box-shadow: 0 0 40px 6px green;
+
+}
+</style>
 <body>
+ 
   <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>
