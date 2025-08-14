@@ -424,7 +424,7 @@ userebi.forEach((element:{user:any}) => {
       this.task.nativeElement.style.display='none';
       this.lists.nativeElement.style.display='flex';
       this.socket.loadtasks(this.currid);
-    }, 2000);
+    }, 2300);
   
   });
 
