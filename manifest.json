@@ -3,7 +3,7 @@
   "short_name": "Todolist",
   "display": "standalone",
   "scope": "./",
-  "start_url": "./",
+  "start_url": "https://D0ubleGi.github.io/manifest/",
   "icons": [
     { "src": "icons/to-do-list_3_optimized.png",   "sizes": "72x72",   "type": "image/png", "purpose": "maskable any" },
     { "src": "icons/to-do-list_3_1_optimized.png", "sizes": "96x96",   "type": "image/png", "purpose": "maskable any" },
