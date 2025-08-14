@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1755173948732,
+  "timestamp": 1755174956050,
   "index": "/manifest/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/manifest/favicon.ico",
         "/manifest/index.html",
-        "/manifest/main-2WMKNEA7.js",
+        "/manifest/main-QUF27YN5.js",
         "/manifest/polyfills-B6TNHZQ6.js",
         "/manifest/styles-5INURTSO.css"
       ],
@@ -72,8 +72,8 @@
     "/manifest/favicon-96x96.png": "398b8d47dcd45c7f05991b31f0da981dc0cf14df",
     "/manifest/favicon.ico": "095c21a87350b39cb4543ba357015b424a94b0e0",
     "/manifest/favicon.svg": "c943cdf9db4112fa372089fa0a71c0e9e2d0cd8b",
-    "/manifest/index.html": "6727484d4b3b8fdc89f2c8b736e27723370049d6",
-    "/manifest/main-2WMKNEA7.js": "2f8abbe30f5e43cb91181b2fc9afa785c6281a09",
+    "/manifest/index.html": "e984eb354d4305baa86db216ff6927fa598ea142",
+    "/manifest/main-QUF27YN5.js": "d8bd142f33d42b0725cb2516a2a44e2584b94b0f",
     "/manifest/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
     "/manifest/styles-5INURTSO.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "/manifest/web-app-manifest-192x192.png": "b4f601a664ac166b5d3ee377192d2ab7ad3aeeb0",
