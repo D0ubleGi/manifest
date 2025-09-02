@@ -165,8 +165,16 @@ this.socket = io('https://list-backend-jzt8.onrender.com', {
     sende(id:string,name:string,taskname:string){
       this.socket.emit('sende',id,name,taskname);
     }
+    sendee(id:string,name:string,taskname:string){
+      this.socket.emit('sendee',id,name,taskname);
+    }
     onsende(callback:(email:any,taskname:string)=>void){
       this.socket.on('sentem',(email:any,taskname:string)=>{
+        callback(email,taskname);
+      });
+    }
+     onsendee(callback:(email:any,taskname:string)=>void){
+      this.socket.on('sentemm',(email:any,taskname:string)=>{
         callback(email,taskname);
       });
     }

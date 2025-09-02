@@ -16,7 +16,7 @@ import { RouterModule, Router } from '@angular/router';
 import { SocketService } from './socket.services';
 import { ChangeDetectorRef } from '@angular/core';
 import { NgZone } from '@angular/core';
-import { repeat } from 'rxjs';
+import { EmptyError, repeat } from 'rxjs';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
@@ -420,6 +420,7 @@ userebi.forEach((element:{user:any}) => {
     else{
     this.validation17.nativeElement.textContent=`✅Task ${JSON.stringify(del)} completed successfully!`;
     this.validation17.nativeElement.style.color='green';
+    this.socket.sendee(this.currid,this.useri,JSON.stringify(del));
     }
     setTimeout(() => {
       this.validation17.nativeElement.textContent='';
@@ -528,18 +529,36 @@ this.ko.nativeElement.textContent=`Tasks named: ${this.gtask}`;
     });
 
     this.socket.onsende((emails,taskname)=>{
-      emails.forEach((element: any)=>{
+      emails.forEach((element: any)=>{console.log(element);
          this.http.post("https://beckend2.onrender.com/send-email", {
   to: element,
   subject: "New Task Alert",
-  text: `User ${this.useri},
+  text: `User ${this.useri}
 
   Added new task named ${taskname}!
   `
 }).subscribe(res => {
   console.log(res);
 });
-      })
+
+      });
+    });
+
+    
+    this.socket.onsendee((emails,taskname)=>{
+      emails.forEach((element: any)=>{console.log(element);
+         this.http.post("https://beckend2.onrender.com/send-email", {
+  to: element,
+  subject: "New Task Alert",
+  text: `User ${this.useri}
+
+  completed task named ${taskname}!
+  `
+}).subscribe(res => {
+  console.log(res);
+});
+
+      });
     });
  }
 ngAfterViewInit() { }
