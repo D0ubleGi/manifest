@@ -17,10 +17,11 @@ import { SocketService } from './socket.services';
 import { ChangeDetectorRef } from '@angular/core';
 import { NgZone } from '@angular/core';
 import { repeat } from 'rxjs';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterModule],
+  imports: [CommonModule, FormsModule, RouterModule,  HttpClientModule],
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
 })
@@ -29,6 +30,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterViewChecked {
    constructor(
     private cdRef: ChangeDetectorRef,
     private renderer: Renderer2,
+    private http: HttpClient,
     private socket: SocketService,
     private elRef: ElementRef,
     private router: Router,
@@ -302,6 +304,7 @@ for (let i = 0; i < haia.length; i++) {
     if(rep==='add'){
     this.validation16.nativeElement.textContent='✅ Successfully added!';
     this.validation16.nativeElement.style.color='green';
+    this.socket.sende(idd,this.useri,taskname);
     setTimeout(() => {
       this.validation16.nativeElement.textContent='';
       this.cratetask.nativeElement.style.display='none';
@@ -522,6 +525,21 @@ this.ko.nativeElement.textContent=`Tasks named: ${this.gtask}`;
       this.deferredPrompt = e as BeforeInstallPromptEvent;
       console.log('PWA install prompt saved.');
       
+    });
+
+    this.socket.onsende((emails,taskname)=>{
+      emails.forEach((element: any)=>{
+         this.http.post("https://beckend2.onrender.com/send-email", {
+  to: element,
+  subject: "New Task Alert",
+  text: `User ${this.useri},
+
+  Added new task named ${taskname}!
+  `
+}).subscribe(res => {
+  console.log(res);
+});
+      })
     });
  }
 ngAfterViewInit() { }

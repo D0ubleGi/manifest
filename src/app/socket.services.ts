@@ -1,6 +1,7 @@
 
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
+import { EmailValidator } from '@angular/forms';
 import { max } from 'rxjs';
 import { io, Socket } from 'socket.io-client';
 
@@ -159,6 +160,14 @@ this.socket = io('https://list-backend-jzt8.onrender.com', {
     onsearchh(callback:(tas:any)=>void){
       this.socket.on('foundd',(tas:any)=>{
         callback(tas);
+      });
+    }
+    sende(id:string,name:string,taskname:string){
+      this.socket.emit('sende',id,name,taskname);
+    }
+    onsende(callback:(email:any,taskname:string)=>void){
+      this.socket.on('sentem',(email:any,taskname:string)=>{
+        callback(email,taskname);
       });
     }
 }
