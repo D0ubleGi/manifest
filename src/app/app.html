@@ -1,0 +1,155 @@
+ <div class="bg-animation">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="stars4"></div>
+  </div>
+<div #register id="register">
+    <div id="regtext">Register</div>
+    <p id="user" class="p">Username:</p>
+    <input #Username id="username" class="input" type="text" [(ngModel)]="username" placeholder="Enter username..." title="Enter your username!" required>
+    <p #validation1 id="validation1" class="validation"></p>
+    <p id="email" class="p">Email:</p>
+    <input #Email type="email" class="input" id="emaill" [(ngModel)]="email" placeholder="Enter email..." title="Enter your email!" required>
+    <p #validation2 id="validation2" class="validation"></p>
+    <p id="password" class="p">Password:</p>
+    <input #Password type="password" id="passwordi" class="input" [(ngModel)]="password" placeholder="Enter password..." title="Enter your password!" required>
+    <p #validation3 id="validation3" class="validation"></p>
+    <p id="donthave">Already have an account? <button id="signup" (click)="signupp()" #signup>Sign in</button></p>
+    <p #validation4 id="validation4" class="validation"></p>
+    <button #button1 id="button1" class="button" (click)="submit()">Submit</button>
+</div>
+
+<div #loging id="login">
+    <div id="logg">Log in</div>
+    <p id="userr" class="p">Username:</p>
+    <input type="text" id="user1" class="input" [(ngModel)]="useri" placeholder="Enter username..." title="Enter your username!" required>
+    <p #validation6 id="validation6" class="validation"></p>
+    <p id="passwd" class="p">Password:</p>
+    <input type="password" id="pass" class="input" [(ngModel)]="passi" maxlength="16" placeholder="Enter password..." title="Enter your passwprd!" required>
+    <p #validation7 id="validation7" class="validation"></p>
+    <p id="crateeacc">Dont have an account? <button #crateacc id="crateacc" (click)="sign()">Sign up</button> </p>
+    <button #signin id="button3" class="button" (click)="Signin()">Sign in</button>
+</div>
+
+<div #idregister id="idregister">
+    <div id="idreg">Id</div>
+    <p id="roomid" class="p">Id:</p>
+    <input #Id type="text" id="Id" class="input" [(ngModel)]="Idd" placeholder="Enter Id..." title="Enter Id" required>
+    <p #validation5 id="validation5" class="validation"></p>
+    <p id="cratenew">Crate new?<button #crate id="crate" (click)="cratee()">Crate</button></p>
+    <p #validation12 id="validation12" class="validation"></p>
+    <button #button2 id="button2" (click)="Add()">Add</button>
+    <button id="button14" class="button" (click)="bako()"><</button>
+</div>
+
+<div #idcrate id="idcrate">
+<div id="crateidd">Crate Id</div>
+<p id="maxuser" class="p">Max users:</p>
+<input type="text" inputmode="numeric" maxlength="9" placeholder="Enter max number of users..." title="Enter number!" required
+       class="input" id="maxuss" [(ngModel)]="maxx" (keydown)="allowOnlyNumbers($event)">
+<p #validation8 id="validation8" class="validation"></p>
+<p id="namm">Id name:</p>
+<input type="text" class="input" id="idname" [(ngModel)]="nami" placeholder="Enter Id name..." title="Enter id name!" required>
+<p #validation11 id="validation11" class="validation"></p>
+<p id="genid" class="p">Generate your Id:</p>
+<div id="exdiv">
+<div #indiv class="input" id="indiv"></div>
+<button id="button6" (click)="generate()" class="button">Generate</button>
+</div>
+<p #validation9 id="validation9" class="validation"></p>
+<p id="haveone">Register existing Id <button id="button13" (click)="here()" class="button">here</button></p>
+<button #button5 id="button5" (click)="check()" class="button">Check</button>
+<p #validation10 id="validation10" class="validation" id="validation10"></p>
+</div>
+
+
+<div #Todolists id="Todolists">
+<div id="tlist">Lists</div>
+<div #todos id="todos">
+</div>
+<button #remove id="button16" (click)="removee()" class="button 16">❌ Remove list</button>
+<button #addmore id="button4" (click)="addnew()"  class="button">Add</button>
+</div>
+
+<div #lists id="lists">
+<div id="tlistt">Tasks</div>
+<button id="button12" (click)="baki()" class="button"><</button>
+<div #todoss id="todo">
+</div>
+<button #addmore id="button7" (click)="Addtask()" class="button">Add task</button>
+</div>
+
+
+<div #cratetask id="cratetask">
+<div #crt id="crt">New task</div>
+<p  id="taskname">Task name:</p>
+<input #taskname type="text" class="input" id="taskname" maxlength="15" placeholder="Enter task name..." [(ngModel)]="tasknamee" title="Enter task name!" required>
+<p #validation13 id="validation13" class="validation"></p>
+<p #tasktitl id="tasktitle">Task title:</p>
+<input #tasktitle type="text" class="input" id="tasktitle" maxlength="30" placeholder="Enter task title..." [(ngModel)]="tasktitlee" title="Enter task title!" required>
+<p #validation14 id="validation14" class="validation"></p>
+<p id="taskdescc">Task description:</p>
+<input #taskdesc type="text" class="input" id="taskdesc" placeholder="Enter task description..." [(ngModel)]="taskdescription" title="Enter task description!" required>
+<p #validation15 id="validation15" class="validation"></p>
+<p #validation16 id="validation16" class="validation"></p>
+<div id="xazi"></div>
+<button id="button9" (click)="gobo()" class="button"><</button>
+<button #button8 id="button8" class="button" (click)="Addi()">Add</button>
+</div>
+
+<div #task id="task">
+<div #takn id="takn"></div>
+<button id="button11" (click)="gob()" class="button"><</button>
+<div #taskde id="taskde">
+    <p #ttaknn id="ttaknn"></p>
+    <div #sataske id="sataske"></div>
+</div>
+<p #validation17 id="validation17" class="validation"></p>
+<button #button10 id="button10" (click)="completed()" class="button">Completed✅</button>
+</div>
+<div #yesno id="yesno">
+    <p #usure id="usure">Are you sure you want to delete?'</p>
+    <div id="butts">
+    <button #button17 (click)="closee()" class='btta'id="button17">✅</button>
+    <button #button18 class="btta" (click)="closee()" id="button18">❌</button>
+</div>
+</div>
+<div #userss id="userss">
+    <p id="usiks">List users:</p>
+    <div #usis id="usis"></div>
+    <button #button19 (click)="hide()" id="button19">Hide</button>
+</div>
+<button #button20 id="button20" (click)="show()">Show users</button>
+
+<div #saaide  id="saaide">
+<div id="iduu">Id:</div>
+<div #saaidee>3b039ced56524f75a7c5efcee1116277</div> 
+</div>
+
+<div #searchts id="searchts">
+    <div #srch id="srch"></div>
+    <p id="ent">Enter name:</p>
+    <input #inpi type="text" id="inpi" class="input" [(ngModel)]="inpii" placeholder="" required>
+    <p #validation19 id="validation19" class="validation"></p>
+    <button id="button21" (click)="search()">Search</button>
+</div>
+
+<div #liske id="liske">
+    <div #ko id="ko"></div>
+    <div #salike id="salike"></div>
+    <button id="button22" (click)="closse()">Close</button>
+</div>
+<div #yessno id="yessno">
+    <p #usuree id="usuree"></p>
+    <p id="uusure">Add it anyways?</p>
+    <div id="buttss">
+    <button #button117 (click)="closeee()" (click)="clo()" class='btta'id="button117">✅</button>
+    <button #button118 class="btta" (click)="closeee()" id="button118">❌</button>
+</div>
+</div>
+<div id="inst">
+<button #install id="install" (click)="installApp()">Install App<img id="haoa" src="assets/images/to-do-list (3).png" alt="To-do List">
+</button>
+</div>
+
